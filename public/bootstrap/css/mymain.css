@@ -1,0 +1,82 @@
+p{
+    font-size: 14px;
+}
+a{
+    cursor: pointer;
+}
+.mngmt_menu{
+    text-align: center;
+    font-size: 1.4em;
+    font-family: sans-serif;
+    margin: 10px;
+    border: 1px solid #28a4c9;
+    border-radius: 5px;
+    height: 170px;
+    padding: 10px;
+}
+a .mngmt_menu{
+    background: rgba(00, 50, 80, .25);
+
+}
+
+a .mngmt_menu:hover{
+    background: rgba(100, 200, 60, .08);
+}
+
+.active{
+    background: rgba(0, 0, 102, 0.2);
+}
+.my_menu_arrow_icon{
+    float: right;
+}
+
+.table_forms tr{
+    height: 40px;
+    padding: 5px;
+    margin: 10px;
+}
+
+/*////Notifications*/
+
+#noti_Container {
+    position:relative;     /* This is crucial for the absolutely positioned element */
+    border:1px solid blue; /* This is just to show you where the container ends */
+    width:40px;
+    height:40px;
+    padding: 0;
+    margin: 0;
+}
+.noti_bubble {
+    position:absolute;    /* This breaks the div from the normal HTML document. */
+    left: 75px;
+    top:-4px;
+    padding:0px 4px 0px 4px;
+    background-color:rgba(255, 0, 0, .9); /* you could use a background image if you'd like as well */
+    color:white;
+    font-weight:bold;
+    font-size:.7em;
+    border-radius:30%;
+    box-shadow:1px 1px 1px gray;
+}
+
+.noti_bubble_sub {
+    position:absolute;    /* This breaks the div from the normal HTML document. */
+    left: 8px;
+    top:-8px;
+    padding: 2px;
+    /*            padding:1px 2px 1px 2px;*/
+    background-color:red; /* you could use a background image if you'd like as well */
+    color:white;
+    font-weight:bold;
+    font-size:.6em;
+
+    /* The following is CSS3, but isn't crucial for this technique to work. */
+    /* Keep in mind that if a browser doesn't support CSS3, it's fine! They just won't have rounded borders and won't have a box shadow effect. */
+    /* You can always use a background image to produce the same effect if you want to, and you can use both together so browsers without CSS3 still have the rounded/shadow look. */
+    border-radius:2px;
+    box-shadow:1px 1px 1px gray;
+}
+.float_right{
+    text-align: right;
+    float: right;
+}
